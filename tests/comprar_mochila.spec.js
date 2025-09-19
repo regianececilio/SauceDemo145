@@ -67,4 +67,4 @@ test('Realizar o fluxo de compra da mochila', async ({page}) => {
 
     
 
-}) // final do teste
+}) // Final do teste
