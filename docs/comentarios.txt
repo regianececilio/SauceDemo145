@@ -1,0 +1,37 @@
+Orientações:
+
+const                   será carregado no início do Programa, não pode receber valor duas vezes
+let                     declarando uma variável: se não muda o valor usa const; se muda o valor usa let
+=                       recebe algo
+=>                      quer dizer que é uma função de teste
+page                    é o elemento - nome comum que se usa no Playwright apra esse elemento
+await                   sempre que usar assincrono as linhas iniciam com await
+expect                  usado para ver alguma coisa que tem na página
+locator                 localizador do elemento
+fill                    preenche o campo * se utilizar o localizador pelo cssSelector informa somente o valor
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Modos de execução:
+
+Headless (padrão)       sem exibição    vantagens: não tem interferência do usuário, leve (gasta menos recursos)
+Headed                  com exibição    desvantagens: tem que ter o cuidado com o mouse e teclado para não atrapalhar os testes
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Melhores localizadores (2025):
+
+data-test (W3C)
+id                      '#login-button'
+name                    '[name="user-name"]'
+cssSelector             'input.input_error.form_input   primeira palavra da tag + conteúdo da classe  * onde tiver um espaço coloca um ponto * quando o seletor tem o símbolo de maior (>) não utiliza ponto onde tem espaço em branco
+                        ou '.input_error.form_input
+xPath                   'xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[1]/a/img'
+
+* Se tiver alguma mudança na tela o cssSelector e o xPath vão alterar
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
