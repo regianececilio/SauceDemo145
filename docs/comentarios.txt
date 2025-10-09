@@ -3,6 +3,11 @@ Orientações:
 const                   será carregado no início do Programa, não pode receber valor duas vezes
 let                     declarando uma variável: se não muda o valor usa const; se muda o valor usa let
 =                       recebe algo
+==                      igual
+!                       não
+=!                      diferente
+||                      ou
+&                       e
 =>                      quer dizer que é uma função de teste
 page                    é o elemento - nome comum que se usa no Playwright apra esse elemento
 await                   sempre que usar assincrono as linhas iniciam com await
@@ -31,7 +36,5 @@ xPath                   'xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/
 * Se tiver alguma mudança na tela o cssSelector e o xPath vão alterar
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-
----------------------------------------------------------------------------------------------------------------------------------------
 
 
