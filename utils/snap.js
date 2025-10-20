@@ -26,7 +26,7 @@ async function snap(page, test_info, label){
     // Gravacao do arquivo
     fs.mkdirSync(SHOTS_DIR, { recursive: true })
     await page.screenshot({ path: dest, fullPage: true})                // Tira o print. Se fullPage = true (tira uma foto da tela inteira, mesmo do que não está visível)
-    
+    return dest
 }
 
 // Exporta a funcao para ficar visivel para todo o projeto

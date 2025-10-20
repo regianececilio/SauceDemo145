@@ -9,7 +9,7 @@ function isoTs() {
 }
 
 // Tenta achar o caminho pela variável de ambiente OU se não encontrar pega pela a pasta padrão do node (projeto) e cria as pastas artifacts e logs
-const LOGS_DIR = process.env.LOGS_DIR || path.join(process.cwd, 'artifacts', 'logs')     
+const LOGS_DIR = process.env.LOGS_DIR || path.join(process.cwd(), 'artifacts', 'logs')     
 
 // Se não existir a pasta, ele cria
 if (!fs.existsSync(LOGS_DIR)) fs.mkdirSync(LOGS_DIR, {recursive: true})

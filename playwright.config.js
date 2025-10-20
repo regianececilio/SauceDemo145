@@ -13,7 +13,7 @@ process.env.RUN_DIR         = runDir
 process.env.SCREENSHOTS_DIR = screenshotsDir
 
 module.exports = defineConfig({                                 // module.exports serve para o que estiver fazendo fique visível para outro arquivo    
-    testDir: '.tests',                                          // nossos testes estão na pasta tests
+    testDir: './tests',                                         // nossos testes estão na pasta tests
     timeout: 30000,                                             // tempo limite de execução 30_000 = 30 segundos, se passar ele vai abortar
     fullyParallel: true,                                        // execução em paralelo / multi thread (usado geralmente em ambientes onde pode ter testes simultâneos)
     outputDir: resultsDir,                                      // pra saber qual é a pasta que ele quer
