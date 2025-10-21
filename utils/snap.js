@@ -20,7 +20,8 @@ function safe_name(name){
 // Funcao para tirar os prints
 async function snap(page, test_info, label){
     // Pega informacoes do Playwright para formar o nome do arquivo
-    const file = `${safe_name(test_info.title)}__${safe_name(label)}.png`   // Por padrão quando a gente tira o print, tira no formato png (boa qualidade)
+    //const file = `${safe_name(test_info.title)}__${safe_name(label)}.png`   // Por padrão quando a gente tira o print, tira no formato png (boa qualidade)
+    const file = `${safe_name(test_info.title)}/${safe_name(label)}.png`   // Por padrão quando a gente tira o print, tira no formato png (boa qualidade)
     const dest = path.join(SHOTS_DIR, file)
 
     // Gravacao do arquivo
