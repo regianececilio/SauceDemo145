@@ -14,7 +14,7 @@ process.env.SCREENSHOTS_DIR = screenshotsDir
 
 module.exports = defineConfig({                                 // module.exports serve para o que estiver fazendo fique visível para outro arquivo    
     testDir: './tests',                                         // nossos testes estão na pasta tests
-    timeout: 30000,                                             // tempo limite de execução 30_000 = 30 segundos, se passar ele vai abortar
+    timeout: 30000,                                             // tempo geral - tempo limite de execução 30_000 = 30 segundos, se passar ele vai abortar
     fullyParallel: true,                                        // execução em paralelo / multi thread (usado geralmente em ambientes onde pode ter testes simultâneos)
     outputDir: resultsDir,                                      // pra saber qual é a pasta que ele quer
     use: {                                                      // todos os parâmetro já são definidos, a gente não tem que inventar
@@ -27,8 +27,8 @@ module.exports = defineConfig({                                 // module.export
         trace:      'retain-on-failure',                        // salva o trice, se houver erro (registro do que acontece no processador, memoria, recursos) (é um log técnico mais detalhado)
 
         // outros tipos de timeout
-        actionTimeout: 15000,                                   // aborta se nada estiver acontecendo em 15s
-        navigationTimeout: 20000,                               // aborta se parar o navegador, se não tiver mudança de página no tempo informado
+        actionTimeout: 15000,                                   // tempo especifico das acoes (quando clica, escreve) - aborta se nada estiver acontecendo em 15s
+        navigationTimeout: 20000,                               // tempo para transicao de uma tela pra outra (carregamento) - aborta se parar o navegador, se não tiver mudança de página no tempo informado
 
         launchOptions:{                                         // são opções do navegador que será executado
             slowMo: 1000                                        // câmera lenta - velocidade. Espere 1 segundo entre cada ação. 
